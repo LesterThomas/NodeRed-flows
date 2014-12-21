@@ -16,5 +16,7 @@ Add a reference to this module in node-red when it starts by adding the followin
     }
 ```
 
+Finally, put the `.json` file into the `/lib/flows` folder and import the flow using the Node-Red import menu.
+
 This flow is based on a flow by paulmooibroek http://flows.nodered.org/flow/f38309df456a0aa4c05b.
 
