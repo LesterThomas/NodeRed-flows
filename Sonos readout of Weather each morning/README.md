@@ -8,7 +8,7 @@ Install the sonos module:
 	npm install sonos
 ```
 
-Add a reference to this module in node-red when it starts by adding the following code to the settings.js file in node-red (or in thethingbox.js if you are using node-red on a Raspberry Pi using http://thethingbox.io/)
+Add a reference to this module in node-red when it starts by adding the following code to the `settings.js` file in node-red (or in `thethingbox.js` if you are using node-red on a Raspberry Pi using http://thethingbox.io/)
 
 ```javascript
     functionGlobalContext: {
