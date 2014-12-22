@@ -1,3 +1,6 @@
+Query BT router for registered people (inc Sonos welcome and Tannoy)
+====================================================================
+
 This flow polls the BT router in my house to look for the mac address of connected devices. I maintain a JSON of devices I'm interested in (my mobile phones). It then logs into a Cloudant database when one of the devices registers or un-registers with the router. For registrations, it also plays a Welcome message over my Sonos. 
 
 This flow requires the sonos Node Module https://www.npmjs.com/package/sonos

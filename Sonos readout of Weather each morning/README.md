@@ -1,3 +1,6 @@
+Sonos readout of Weather each morning
+=====================================
+
 This flow reads the local weather out over my Sonos at 7am on weekdays and 8am on weekends. It uses BBC Weather for the local forecast and then a text-to-speech api to generate a url to send to Sonos.
 
 This flow requires the sonos Node Module https://www.npmjs.com/package/sonos

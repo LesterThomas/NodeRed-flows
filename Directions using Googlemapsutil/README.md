@@ -1,4 +1,7 @@
-This is a test flow to test the Googlemaps API using the googlemapsutil wrapper node (https://www.npmjs.com/package/googlemapsutil). It takes two addresses and uses the google API to calculate the distance (in kn and time).
+Directions using Googlemapsutil
+===============================
+
+This is a test flow to test the Googlemaps API using the googlemapsutil wrapper node (https://www.npmjs.com/package/googlemapsutil). It takes two addresses and uses the google API to calculate the distance (in km and time).
 
 Install the googlemapsutil module:
 
