@@ -6,7 +6,7 @@ This lets you analyse Tweets over an elapsed period. It has an input flow that r
 Web Client
 ----------
 
-![ScreenShot](/Screenshot.bmp)
+![ScreenShot](Screenshot.bmp)
 
 The Web Client shows a word-cloud of all the words that were tweeted about the chosen subject over the last 24 hours. The Colour of the words is determined by the sentiment
 of the tweets, and the size of word is determined by the number of followers of the Tweets.
@@ -18,7 +18,7 @@ The Web Client uses AJAX/JSON to access the JSON database directly (The web clie
 
 Here is the flow for the Web Client and the db Proxies
 
-![Web Client Flow](/WebClientFlow.bmp)
+![Web Client Flow](WebClientFlow.bmp)
 
 
 Twitter Input Flow
@@ -94,10 +94,10 @@ already exists, it updates the existing word. Here is an example word JSON docum
 
 Here is the flow for the TwitterInput:
 
-![Twitter Input Flow](/TwitterInputFlow.bmp)
+![Twitter Input Flow](TwitterInputFlow.bmp)
 
 
 There is also a flow that removes tweets after a configurable time (currently set to 24 hours). The flow removes the tweet and any links to the tweet from words it contains. If it removes the last link for a word, it also deletes the word from the database.
 
-![Twitter Purge Flow](/TwitterPurgeFlow.bmp)
+![Twitter Purge Flow](TwitterPurgeFlow.bmp)
 
