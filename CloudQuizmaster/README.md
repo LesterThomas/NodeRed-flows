@@ -1,7 +1,7 @@
 Quiz Master
 ===========
 
-This application lets you host a quiz and have first-person-to-buzz functionality. There are two web-pages, the quiz-master and a quiz-client for each participant.
+This application is hosted on http://bluemix.net. The application lets you host a quiz and have first-person-to-buzz functionality. There are two web-pages, the quiz-master (http://quiz.mybluemix.net/quizmaster) and a quiz-client (http://quiz.mybluemix.net/quizclient) for each participant.
 
 Quiz Client
 ----------
