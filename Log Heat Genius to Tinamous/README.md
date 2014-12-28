@@ -6,7 +6,7 @@ This flow queries my Heat Genius to retrieve the Temperature, Activity and other
 
 Here is the flow:
 
-![Flow](flow.bmp)
+![Flow](Flow.bmp)
 
 Here is a screenshot of the output at Tinamous:
 
