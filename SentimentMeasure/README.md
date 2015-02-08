@@ -5,11 +5,11 @@ This application lets you capture audience feedback by letting the audience use 
 
 The client has a simple slider to capture feedback (from Cool to Scary in the screenshot below). The screenshot shows two clients and then the JSON response to the API.
 
-![ScreenShot](screenshot.bmp)
+![ScreenShot](screenshot.png)
 
 Here is the flow:
 
-![flow](flow.bmp)
+![flow](flow.png)
 
 The JSON format uses timestamps to anonymously identify clients (and to remove them 5 seconds after they leave) 
 ```

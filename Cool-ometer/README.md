@@ -1,17 +1,12 @@
-Audience feedback capture
-=========================
+Cool-ometer
+===========
 
-This application lets you capture audience feedback by letting the audience use a simple mobile client. The overall feedback can be viewed on both a browser-based view or via an API (designed to work with a physical 'cool-ometer' display (see my other Node-Red project). 
+This is a physical diplay with a large dial - in conjunction with the sentimentMeasure flow, it will displays the average sentiment of an audience physical dial. The audience 'vote' using a mobile-based HTML5 app and, a cloud service captures and aggregates the score and this display shows it using a servo-driven needle.
 
-The client has a simple slider to capture feedback (from Cool to Scary in the screenshot below). The screenshot shows two clients and then the JSON response to the API.
+The Servo is controlled using a XINO RF Arduino-compatible board with a built-in radio serial interface. This interfaces to a slide-of-radio module installed on a Raspberry Pi. The XINO RF runs the standatd LLAP controller software; The Raspberry sends LLAP messages over the Radio serial interface. The message to set the Servo position is 'a--SERVO115-' where 'a--' is the id of the XINO RF module, 'SERVO' is the command to set the SERVO and '115' is the requessted angle (between 0-180 degrees). The trailing '-' is needed since all LLAP messages need to be 12 chars.
 
-![ScreenShot](screenshot.bmp)
+The flow gets the required sentiment by calling an API on the sentimentMeasure flow which returns the following result (only the avarage is used):
 
-Here is the flow:
-
-![flow](flow.bmp)
-
-The JSON format uses timestamps to anonymously identify clients (and to remove them 5 seconds after they leave) 
 ```
 {
 "average": 30.5,
@@ -25,4 +20,8 @@ The JSON format uses timestamps to anonymously identify clients (and to remove t
 	}
 }
 ```
+
+Here is the flow:
+
+![flow](flow.png)
 
